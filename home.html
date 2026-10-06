@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadja Radakovic | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+    <div class="portfolio-container">
+        
+        <!-- Navigation Header -->
+        <header class="site-header">
+            <span class="logo-text">NR.</span>
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="search.html">Bag Finder Tool</a>
+            </nav>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <h1 class="hello-heading">Hello, I'm Nadja!</h1>
+            <p class="intro-text">Fill later</p>
+            <!-- Make sure you have a file named resume.pdf in your folder -->
+            <a href="resume.pdf" download class="btn-download">Download my resume</a>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+            
+            <div class="category-block">
+                <h2 class="category-title">Web & Digital Optimization</h2>
+                <div class="project-grid">
+                    
+                    <!-- Project 1: N.G. Building Cleaning Corp -->
+                    <div class="project-card">
+                        <h3><a href="https://www.ngbcleaning.ca" target="_blank" class="project-link">N.G. Building Cleaning Corp</a></h3>
+                        
+                        <div class="desc-container">
+                            <p class="clamp-text">N.G Building Cleaning job description</p>
+                        </div>
+                        <button class="toggle-btn" onclick="toggleText(this)">Show more</button>
+
+                        <div class="skill-tags">
+                            <span class="tag pink">SEO</span>
+                            <span class="tag yellow">UX/UI</span>
+                            <span class="tag green">HTML</span>
+                            <span class="tag green">CSS</span>
+                            <span class="tag yellow">Javascript</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="category-block">
+                <h2 class="category-title">Media Production & Design</h2>
+                <div class="project-grid">
+                    
+                    <!-- Project 2: Watching Territory -->
+                    <div class="project-card">
+                        <h3><a href="https://www.surveillart.ca/exhibition-watching-territory" target="_blank" class="project-link">Watching Territory Capstone</a></h3>
+                        
+                        <div class="desc-container">
+                            <p class="clamp-text">Description of the Watching Territory capstone exhibition project, detailing final year media production, research, and interactive exhibit design execution.</p>
+                        </div>
+                        <button class="toggle-btn" onclick="toggleText(this)">Show more</button>
+
+                        <div class="skill-tags">
+                            <span class="tag pink">Exhibition Design</span>
+                            <span class="tag green">Media Production</span>
+                            <span class="tag yellow">Research</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: National Arts Centre (NAC) - Secret Lake -->
+                    <div class="project-card">
+                        <h3><a href="#" class="project-link">National Arts Centre: Secret Lake Project</a></h3>
+                        
+                        <div class="desc-container">
+                            <p class="clamp-text">A multi-media exploration based on the artwork "Secret Lake" by Manessier. Developed an illustrated children's book featuring custom wireframing, layout architecture, and design created across Adobe Illustrator, Photoshop, and InDesign. Also designed and prototyped an interactive mobile game companion in Adobe XD complete with a video walkthrough.</p>
+                        </div>
+                        <button class="toggle-btn" onclick="toggleText(this)">Show more</button>
+
+                        <div class="skill-tags">
+                            <span class="tag yellow">Wireframing</span>
+                            <span class="tag pink">UX/UI</span>
+                            <span class="tag green">Adobe Illustrator</span>
+                            <span class="tag green">Adobe Photoshop</span>
+                            <span class="tag green">Adobe InDesign</span>
+                            <span class="tag yellow">Adobe XD</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Nadja Radakovic. Built with code & creativity.</p>
+        </footer>
+
+    </div>
+
+    <!-- Script for Expandable Text Toggle -->
+    <script>
+        function toggleText(btn) {
+            const container = btn.previousElementSibling;
+            container.classList.toggle('expanded');
+            if (container.classList.contains('expanded')) {
+                btn.textContent = "Show less";
+            } else {
+                btn.textContent = "Show more";
+            }
+        }
+    </script>
+
+</body>
+</html>
