@@ -1,0 +1,344 @@
+/* --- Global Resets --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* =========================================
+   PAGE ONE: SPOTTY / BLOOMING WELCOME PAGE
+   ========================================= */
+.welcome-page {
+    background-color: #F7DDD5; /* Soft Peony pink base tint */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Blooming Color Blobs (Mixed Palette) */
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    opacity: 0.65;
+    animation: floatBlob 16s ease infinite alternate;
+}
+
+.blob-1 {
+    width: 480px;
+    height: 480px;
+    background-color: #C2CCA7; /* Mint Green */
+    top: -10%;
+    left: -10%;
+    animation-delay: 0s;
+}
+
+.blob-2 {
+    width: 520px;
+    height: 520px;
+    background-color: #DEBECB; /* Candy Pink */
+    bottom: -15%;
+    right: -10%;
+    animation-delay: -5s;
+}
+
+.blob-3 {
+    width: 380px;
+    height: 380px;
+    background-color: #F9DE9D; /* Sunshine Yellow */
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    animation-delay: -10s;
+}
+
+@keyframes floatBlob {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(35px, 25px) scale(1.08); }
+}
+
+.welcome-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    z-index: 10;
+}
+
+.fade-in-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 7.5rem;
+    color: #4a4d3c; /* Deep earthy tone for clear, elegant contrast */
+    font-weight: 400;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 0.3s;
+    text-shadow: 0 4px 20px rgba(194, 204, 167, 0.4);
+}
+
+.fade-in-btn {
+    color: #4a4d3c;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 1.2s;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.fade-in-btn:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(4px);
+    box-shadow: 0 12px 25px rgba(194, 204, 167, 0.3);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   PAGE TWO: HOMEPAGE (PORTFOLIO)
+   ========================================= */
+.home-page {
+    /* A very clean, warm off-white/cream canvas that ties to the soft palette */
+    background-color: #FAFAF7; 
+    color: #2F332A;
+    line-height: 1.6;
+}
+
+.portfolio-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 80px 20px;
+}
+
+/* Header Navigation */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E6E8DF;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+    color: #65613F; /* Jungle green accent */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5A604E;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #9DA159; /* Leaves green hover */
+}
+
+/* Intro Block */
+.intro-section {
+    margin-bottom: 70px;
+}
+
+.hello-heading {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    color: #3E4233; /* Deep, professional earthy dark tone */
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #5F6552;
+    max-width: 600px;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #9DA159; /* Leaves green button for professional contrast */
+    color: #ffffff;
+    padding: 12px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(157, 161, 89, 0.25);
+    transition: all 0.2s ease;
+}
+
+.btn-download:hover {
+    background-color: #8A8E4C;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(157, 161, 89, 0.35);
+}
+
+/* Project Categories */
+.category-block {
+    margin-bottom: 50px;
+}
+
+.category-title {
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+    color: #3E4233;
+    font-weight: 600;
+    border-bottom: 2px solid #E6E8DF;
+    padding-bottom: 8px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    /* Crisp cards using your Mint (`#C2CCA7`) and soft background accents */
+    background-color: #FFFFFF;
+    border: 1px solid #E4E7D8;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(194, 204, 167, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(194, 204, 167, 0.2);
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.15rem;
+    color: #3E4233;
+}
+
+.project-card p {
+    font-size: 0.92rem;
+    color: #5F6552;
+    line-height: 1.5;
+}
+
+/* --- Project Card Enhancements & Text Truncation --- */
+.project-link {
+    color: #3E4233;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: #d87a79; /* Soft muted pink hover */
+}
+
+/* 4-line text clamp */
+.desc-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.clamp-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.92rem;
+    color: #5F6552;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.desc-container.expanded .clamp-text {
+    display: block;
+    overflow: visible;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #8A8E4C;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.toggle-btn:hover {
+    text-decoration: underline;
+}
+
+/* Skill Tags Mini Bubbles */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 50px;
+    letter-spacing: 0.2px;
+}
+
+/* Green, Yellow, and Pink Bubble Fills */
+.tag.green {
+    background-color: #C2CCA7; /* Mint */
+    color: #3b422e;
+}
+
+.tag.yellow {
+    background-color: #F9DE9D; /* Sunshine */
+    color: #4a3d1b;
+}
+
+.tag.pink {
+    background-color: #DEBECB; /* Candy Pink */
+    color: #4a3740;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 30px;
+    border-top: 1px solid #E6E8DF;
+    color: #7C826F;
+    font-size: 0.85rem;
+}
