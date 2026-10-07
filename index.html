@@ -18,7 +18,8 @@
         <div class="blob blob-3"></div>
 
         <div class="welcome-container">
-        <h1 class="fade-in-text">Welcome</h1>
+        <!-- <h1 class="fade-in-text">Welcome</h1> -->
+        <h1 id="welcome-text"></h1>
         <a href="home.html" class="fade-in-btn" aria-label="Get Started">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -27,5 +28,26 @@
         </a>
         </div>
 
+        <!-- TypeIt Library -->
+        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+        <script>
+            new TypeIt("#welcome-text", {
+                speed: 60,
+                waitUntilVisible: true,
+                // Triggers as soon as typing stops:
+                afterComplete: function (instance) {
+                document.querySelector(".fade-in-btn").classList.add("visible");
+                }
+            })
+                .type("Welcome to N4d")      
+                .pause(350)                 
+                .delete(2)                  
+                .type("adja's Portfolio.")
+                .pause(450)
+                .delete(1)
+                .type(" :) ")   
+                .go();
+        </script>
     </body>
 </html>

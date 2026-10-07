@@ -31,9 +31,9 @@ body {
     animation: floatBlob 16s ease infinite alternate;
 }
 
-.blob-1 { width: 480px; height: 480px; background-color: #C2CCA7; top: -10%; left: -10%; animation-delay: 0s; }
-.blob-2 { width: 520px; height: 520px; background-color: #DEBECB; bottom: -15%; right: -10%; animation-delay: -5s; }
-.blob-3 { width: 380px; height: 380px; background-color: #F9DE9D; top: 45%; left: 55%; transform: translate(-50%, -50%); animation-delay: -10s; }
+.blob-1 { width: 480px; height: 480px; background-color: #acbe7c; top: -10%; left: -10%; animation-delay: 0s; }
+.blob-2 { width: 520px; height: 520px; background-color: #e1a3bc; bottom: -15%; right: -10%; animation-delay: -5s; }
+.blob-3 { width: 380px; height: 380px; background-color: #f8d177; top: 45%; left: 55%; transform: translate(-50%, -50%); animation-delay: -10s; }
 
 @keyframes floatBlob {
     0% { transform: translate(0, 0) scale(1); }
@@ -49,17 +49,17 @@ body {
     z-index: 10;
 }
 
-.fade-in-text {
-    font-family: 'Great Vibes', cursive;
-    font-size: 7.5rem;
-    color: #4a4d3c;
-    font-weight: 400;
-    opacity: 0;
-    animation: fadeIn 2s ease forwards;
-    animation-delay: 0.3s;
+/* New: Typewriter Text Styling */
+#welcome-text {
+    font-family: "Basic", sans-serif;
+    font-style: normal;
+    font-size: 3.2rem;
+    color: #414831;
     text-shadow: 0 4px 20px rgba(194, 204, 167, 0.4);
+    min-height: 1.2em;
 }
 
+/* Arrow Button Styling */
 .fade-in-btn {
     color: #4a4d3c;
     background: rgba(255, 255, 255, 0.65);
@@ -72,11 +72,18 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    opacity: 0;
-    animation: fadeIn 2s ease forwards;
-    animation-delay: 1.2s;
-    transition: all 0.3s ease;
+    opacity: 0; /* Hidden by default until TypeIt finishes */
+    pointer-events: none; /* Prevents clicks while hidden */
+    transform: translateY(15px);
+    transition: opacity 0.8s ease, transform 0.8s ease, background 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* JS adds this class when typing finishes */
+.fade-in-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }
 
 .fade-in-btn:hover {
@@ -85,9 +92,11 @@ body {
     box-shadow: 0 12px 25px rgba(194, 204, 167, 0.3);
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
-    to { opacity: 1; transform: translateY(0); }
+/* Responsive adjustment for mobile viewports */
+@media (max-width: 768px) {
+    #welcome-text {
+        font-size: 2rem;
+    }
 }
 
 /* =========================================
@@ -177,7 +186,7 @@ body {
 
 /* Project Heading: Explore My Recent Projects & Professional Experience */
 .projects-heading {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 500;
     color: #535a3b;
     margin-bottom: 30px;
@@ -288,7 +297,7 @@ body {
 /* Text Truncation & Expansion */
 .desc-container {
     position: relative;
-    max-height: 100px; /* Limits height to about 4 lines */
+    max-height: 200px; /* Limits height to about 4 lines */
     overflow: hidden;
     transition: max-height 0.5s ease;
     margin-bottom: 10px;
