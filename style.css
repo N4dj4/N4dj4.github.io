@@ -120,15 +120,15 @@ body {
     font-weight: 600;
     font-size: 1.4rem;
     letter-spacing: -0.5px;
-    color: #65613F; 
+    color: #586044; 
 }
 
 /* Logo custom colours */
 .logo-pink {
-    color: #65613F;
+    color: #7e8a5d;
 }
 .logo-green {
-    color: #65613F;
+    color: #586044;
     font-weight: 700;
 }
 
@@ -141,7 +141,7 @@ body {
     font-size: 3rem;
     letter-spacing: -1px;
     margin-bottom: 20px;
-    color: #3E4233;
+    color: #535a3b;
 }
 
 /* Hello, I'm "Nadja" title */
@@ -158,7 +158,7 @@ body {
 .btn-download {
     display: inline-block;
     margin-top: 10px;
-    background-color: #7e8a5d; 
+    background-color: #e88e8c; 
     color: #ffffff;
     padding: 12px 26px;
     border-radius: 8px;
@@ -177,9 +177,9 @@ body {
 
 /* Project Heading: Explore My Recent Projects & Professional Experience */
 .projects-heading {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     font-weight: 500;
-    color: #7C826F;
+    color: #535a3b;
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -207,10 +207,10 @@ body {
 }
 
 /* Colour-coded category titles */
-.category-data-title { color: #7e8a5d; }        /* Purple for Data Storytelling */
-.category-journalism-title { color: #7e8a5d; }  /* Blue for Journalism */
-.category-media-title { color: #7e8a5d; }       /* Pink for Media */
-.category-web-title { color: #7e8a5d; }         /* Green for Web */
+.category-data-title { color: #8A8E4C; }        /* Purple for Data Storytelling */
+.category-journalism-title { color: #8A8E4C; }  /* Blue for Journalism */
+.category-media-title { color: #8A8E4C; }       /* Pink for Media */
+.category-web-title { color: #8A8E4C; }         /* Green for Web */
 
 .project-grid {
     display: grid;
@@ -368,9 +368,9 @@ body {
     letter-spacing: 0.2px;
 }
 
-/* Colour Coded Categories based on your palette */
+/* Colour Coded Categories based on palette */
 .tag.skill-web { background-color: #C2CCA7; color: #3b422e; }       /* Green for Web/Tech */
-.tag.skill-creative { background-color: #DEBECB; color: #4a3740; }  /* Pink for Creative/Design */
+.tag.skill-creative { background-color: #FFCA8C; color: #724a1c; }  /* Yellow for Creative/Design */
 .tag.skill-research { background-color: #BCC8D0; color: #3b454e; }  /* Blue for Research/Journalism */
 .tag.skill-data { background-color: #CCC3D1; color: #3a3240; }      /* Purple for Data */
 
