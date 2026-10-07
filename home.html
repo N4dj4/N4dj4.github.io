@@ -13,87 +13,210 @@
 
     <div class="portfolio-container">
         
-        <!-- Navigation Header -->
+        <!-- Navigation Header (Cleaned up as requested) -->
         <header class="site-header">
-            <span class="logo-text">NR.</span>
-            <nav class="nav-links">
-                <a href="home.html">Home</a>
-                <a href="search.html">Bag Finder Tool</a>
-            </nav>
+            <span class="logo-code">&lt;n4dj4 /&gt;</span>
         </header>
 
         <!-- Introduction Section -->
         <section class="intro-section">
             <h1 class="hello-heading">Hello, I'm Nadja!</h1>
-            <p class="intro-text">Fill later</p>
-            <!-- Make sure you have a file named resume.pdf in your folder -->
+            
+            <div class="intro-text">
+                <p>My approach to digital media is rooted in a simple reality: a beautifully written narrative is useless if the user cannot navigate it, and a highly functional website fails if the content does not resonate. Studying Media Production and Design at Carleton University placed me exactly at the intersection of IT and journalism, teaching me to treat storytelling not as an abstract concept, but as a structural problem to solve.</p>
+                <p>To me, creating meaningful content is about translation and constant perspective-shifting. It requires diving into the research, running the tests, and understanding exactly who needs to receive the information. When I co-authored a feature for The Narwhal, I spent months interviewing community knowledge keepers in Akwesasne to gather their insights and translate their nuanced environmental experiences into accurate journalism. When I transitioned into government and corporate roles to redesign digital spaces and workflows, the challenge shifted to technical translation. In every project, I map the user journey to find the exact middle ground between the client's business goals, the user's practical expectations, and the reality of what is technically possible to build.</p>
+                <p>I rely heavily on user research, analytics, and accessibility principles because crafting a compelling platform is only the first step. The second is ensuring it actually reaches its intended audience. By combining data insights with a strong foundation in UI/UX design, I aim to create digital experiences that are intuitive and engaging. I enjoy the entire lifecycle of a project, from the initial editorial planning and user testing to the final technical implementation.</p>
+                <p>Digital media and web standards are constantly shifting, which is exactly what keeps this work engaging. Driven by curiosity, I am always exploring new tools, experimenting with platforms, and sharpening my technical toolkit to build web spaces that are clean, practical, and accessible.</p>
+            </div>
+
             <a href="resume.pdf" download class="btn-download">Download my resume</a>
         </section>
 
         <!-- Projects Section -->
         <section class="projects-section">
             
+            <h2 class="section-subtitle">Learn about my recent projects/experiences below</h2>
+
+            <!-- Category 1: Web & Digital -->
             <div class="category-block">
                 <h2 class="category-title">Web & Digital Optimization</h2>
-                <div class="project-grid">
+                <div class="project-grid single-col">
                     
-                    <!-- Project 1: N.G. Building Cleaning Corp -->
                     <div class="project-card">
                         <h3><a href="https://www.ngbcleaning.ca" target="_blank" class="project-link">N.G. Building Cleaning Corp</a></h3>
                         
                         <div class="desc-container">
-                            <p class="clamp-text">N.G Building Cleaning job description</p>
+                            <div class="desc-content">
+                                <h4>The Challenge & Scope Shift</h4>
+                                <p>What began as a request for a simple local SEO audit quickly expanded into a complete digital overhaul. During the initial audit, I realized that optimizing keywords alone would not solve the business's main issue: local prospective clients were bouncing due to a dated interface and slow load times. To meaningfully improve search visibility and user retention, the site required a ground-up redesign focused on UI/UX, accessibility, and restructured content.</p>
+                                
+                                <h4>Balancing Client Vision with User Experience</h4>
+                                <p>I presented my findings to the client and proposed a full site rebuild. The core challenge was managing stakeholder expectations. I needed to extract the client's vision for their brand while advocating for the design choices required for SEO and accessibility. Through multiple phases of wireframing and feedback rounds, I translated their ideas into a practical end product. This process required clear communication and technical translation, ensuring the client felt heard while keeping the site compliant with web standards and optimized for user conversion.</p>
+                                
+                                <h4>Technical & Strategic Execution</h4>
+                                <p>Using custom CSS and JavaScript, I overhauled the frontend aesthetic, eliminated performance bottlenecks, and restructured the site architecture to support long-tail keywords relevant to the Ottawa commercial cleaning market. I also prioritized accessibility, ensuring keyboard navigation, screen reader compatibility, and contrast ratios met modern standards. The technical optimization led to a 100/100 SEO score and a 95/100 Accessibility score on Google PageSpeed Insights.</p>
+                                
+                                <a href="https://www.ngbcleaning.ca" target="_blank" class="custom-link">View the site N.G. Building Cleaning Corp</a>
+                            </div>
                         </div>
                         <button class="toggle-btn" onclick="toggleText(this)">Show more</button>
 
                         <div class="skill-tags">
-                            <span class="tag pink">SEO</span>
-                            <span class="tag yellow">UX/UI</span>
-                            <span class="tag green">HTML</span>
-                            <span class="tag green">CSS</span>
-                            <span class="tag yellow">Javascript</span>
+                            <span class="tag skill-web">HTML/CSS/JS</span>
+                            <span class="tag skill-web">SEO</span>
+                            <span class="tag skill-web">UI/UX Design</span>
+                            <span class="tag skill-web">Web Accessibility</span>
                         </div>
                     </div>
 
                 </div>
             </div>
 
+            <!-- Category 2: Media Production & Design -->
             <div class="category-block">
                 <h2 class="category-title">Media Production & Design</h2>
                 <div class="project-grid">
                     
-                    <!-- Project 2: Watching Territory -->
+                    <!-- Watching Territory -->
                     <div class="project-card">
-                        <h3><a href="https://www.surveillart.ca/exhibition-watching-territory" target="_blank" class="project-link">Watching Territory Capstone</a></h3>
+                        <h3><a href="https://www.surveillart.ca/exhibition-watching-territory" target="_blank" class="project-link">Watching Territory | Digital Preservation & Accessible Multimedia Exhibition</a></h3>
                         
                         <div class="desc-container">
-                            <p class="clamp-text">Description of the Watching Territory capstone exhibition project, detailing final year media production, research, and interactive exhibit design execution.</p>
+                            <div class="desc-content">
+                                <h4>Project Context & Accessibility Philosophy</h4>
+                                <p>As my year-long Capstone final project, I led the digital transformation of Watching Territory, a physical art exhibition. My goal was to move the artwork beyond the physical boundaries of the gallery and create an accessible online experience. This project was driven by a core principle: digitization should democratize access, but thoughtless design only creates new barriers. When web spaces fail to account for diverse user needs, they restrict who can engage with the narrative. I set out to guide our team in designing a multi-platform digital experience that prioritized accessibility from the ground up.</p>
+                                
+                                <h4>Multi-Platform Technical Strategy</h4>
+                                <p>To ensure the exhibition reached the widest possible audience, we implemented a multi-channel design strategy: <br>
+                                • <strong>360-Degree Immersive Virtual Tour:</strong> Using a 360-degree camera, we captured the physical layout and placement of the artwork. We hosted this interactive environment on a custom Wix platform, adding interactive pop-ups with artwork details and bilingual audio narratives in both official languages (English and French).<br>
+                                • <strong>In-Gallery AR Overlays:</strong> For in-person visitors, we created QR code displays placed alongside physical pieces. Scanning these codes launched augmented reality overlays that provided deeper context about the artwork and artists directly on their mobile devices.<br>
+                                • <strong>Linear Guided Video Tour:</strong> To accommodate users with different device capabilities or viewing preferences, we produced a structured YouTube video tour that offered a guided narrative through the gallery space.</p>
+                                
+                                <h4>User Journey & Cultural Integrity</h4>
+                                <p>Preserving the emotional and cultural integrity of the artwork while translating it to a screen required careful attention to the user journey. Every interactive element, from spatial navigation in the virtual room to audio contrast ratios, was designed to keep the focal point on the artists' messaging. By offering multiple entry points, including interactive 360 navigation, AR, audio, and video, our platform allowed users to explore the gallery at their own pace and in the format that best suited their needs.</p>
+
+                                <h4>Key Learnings</h4>
+                                <p>This project showed how a thoughtful, multi-platform design strategy can remove physical barriers and expand the reach of meaningful cultural work. From a leadership perspective, guiding a year-long Capstone project required balancing big-picture strategy with day-to-day execution. It taught me how to manage a team through structured planning, navigate technical compromises across multiple tools, and maintain momentum while ensuring that flexible, user-centred choices remained at the heart of the experience.</p>
+
+                                <a href="https://www.surveillart.ca/exhibition-watching-territory" target="_blank" class="custom-link">See Watching Territory Digitized</a>
+                            </div>
                         </div>
                         <button class="toggle-btn" onclick="toggleText(this)">Show more</button>
 
                         <div class="skill-tags">
-                            <span class="tag pink">Exhibition Design</span>
-                            <span class="tag green">Media Production</span>
-                            <span class="tag yellow">Research</span>
+                            <span class="tag skill-creative">Exhibition Design</span>
+                            <span class="tag skill-creative">AR Overlays</span>
+                            <span class="tag skill-creative">360-Degree Video</span>
+                            <span class="tag skill-research">User Journey Mapping</span>
                         </div>
                     </div>
 
-                    <!-- Project 3: National Arts Centre (NAC) - Secret Lake -->
+                    <!-- Secret Lake -->
                     <div class="project-card">
-                        <h3><a href="#" class="project-link">National Arts Centre: Secret Lake Project</a></h3>
+                        <h3><a href="#" onclick="openModal('assets/SecretLake.pdf')" class="project-link">Art@NAC: Secret Lake | Cross-Media Art Translation & UX Design</a></h3>
                         
                         <div class="desc-container">
-                            <p class="clamp-text">A multi-media exploration based on the artwork "Secret Lake" by Manessier. Developed an illustrated children's book featuring custom wireframing, layout architecture, and design created across Adobe Illustrator, Photoshop, and InDesign. Also designed and prototyped an interactive mobile game companion in Adobe XD complete with a video walkthrough.</p>
+                            <div class="desc-content">
+                                <h4>Project Context & Audience Strategy</h4>
+                                <p>Created for a Visual Communication course at Carleton, this project focused on translating a static fine art piece from the National Arts Centre into accessible, multi-platform design. I chose <a href="#" onclick="openModal('assets/SecretLake.pdf')" class="custom-link inline-link">Secret Lake by Alfred Manessier</a>, a massive woven tapestry inspired by the artist’s 1967 trip to Canada and his impression of the Rideau Lakes. The core challenge was taking an abstract, high-concept artwork and adapting it into formats that could engage broad audiences, specifically younger viewers and interactive mobile users.</p>
+                                
+                                <h4>Print Design: Children’s Activity Book</h4>
+                                <p>Drawing inspiration from how my nieces and nephews interact with art, I designed a children’s activity book that reimagined the tapestry as an educational tool. I wireframed the book’s progression to ensure an intuitive flow for young readers, extracted the original artwork’s colour palette, and adjusted the saturation and tones to better suit a child-friendly aesthetic. Using Adobe InDesign for layout, Illustrator for vector elements, and Photoshop for digital rendering, I created a complete print-ready activity book that combined creative exercises with visual learning.</p>
+
+                                <h4>Digital Design: Interactive Mobile App Experience</h4>
+                                <p>To complement the print component, I designed an interactive mobile app experience that extended the artwork into the digital realm. I created a mobile UI that balanced informative context about the artist’s history and the Rideau Lakes with interactive artistic features. The design allowed users to actively manipulate digital elements inspired by the tapestry, blending art history education with hands-on digital engagement.</p>
+
+                                <h4>Key Learnings</h4>
+                                <p>This project expanded my ability to adapt a single core concept across completely different mediums. It required combining visual storytelling, colour theory, and audience-focused design with practical execution across the Adobe Creative Suite.</p>
+
+                                <div class="link-group">
+                                    <a href="#" onclick="openModal('assets/Wireframes.pdf')" class="custom-link">View Wireframing Process</a>
+                                    <a href="#" onclick="openModal('assets/ActivityBook.pdf')" class="custom-link">View Activity Book Final Product</a>
+                                    <a href="#" onclick="openModal('assets/Walkthrough.mp4')" class="custom-link">View Mobile App Video Walkthrough</a>
+                                </div>
+                            </div>
                         </div>
                         <button class="toggle-btn" onclick="toggleText(this)">Show more</button>
 
                         <div class="skill-tags">
-                            <span class="tag yellow">Wireframing</span>
-                            <span class="tag pink">UX/UI</span>
-                            <span class="tag green">Adobe Illustrator</span>
-                            <span class="tag green">Adobe Photoshop</span>
-                            <span class="tag green">Adobe InDesign</span>
-                            <span class="tag yellow">Adobe XD</span>
+                            <span class="tag skill-creative">Adobe Creative Suite</span>
+                            <span class="tag skill-creative">Wireframing</span>
+                            <span class="tag skill-creative">UI/UX Design</span>
+                            <span class="tag skill-creative">Print Design</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Category 3: Journalism -->
+            <div class="category-block">
+                <h2 class="category-title">Journalism</h2>
+                <div class="project-grid single-col">
+                    
+                    <div class="project-card">
+                        <h3><a href="https://thenarwhal.ca" target="_blank" class="project-link">The Narwhal | Investigative Reporting & Environmental Feature</a></h3>
+                        
+                        <div class="desc-container">
+                            <div class="desc-content">
+                                <h4>Origin & Project Scope</h4>
+                                <p>This feature began as part of the Reporting on Indigenous Communities journalism course at Carleton University. My team was tasked with collaborating on an investigative project centered on the Akwesasne community, conducting deep environmental research, and ultimately pitching a completed feature story to a national Canadian media outlet. Facing an unfamiliar subject area, I started with extensive preliminary research into regional ecological reports and local environmental challenges, narrowing our focus to two prospective stories: declining sturgeon populations and the devastation of Black Ash trees.</p>
+                                
+                                <h4>On-the-Ground Fieldwork & Community Engagement</h4>
+                                <p>To determine which issue required urgent coverage, we traveled to Akwesasne to engage in open dialogue with local residents, knowledge keepers, and cultural experts. True research in this context was not about imposing a predetermined narrative, but listening carefully to the community’s lived experiences. Through these discussions, it became clear that the Emerald Ash Borer, an invasive species, was doing far more than destroying timber. It was directly threatening generations of Mohawk basketweaving traditions. Building respectful relationships with local experts allowed us to gather first-hand insights that no document audit could provide.</p>
+
+                                <h4>Synthesizing Science and Narrative</h4>
+                                <p>The primary editorial challenge was balancing scientific data with qualitative human experiences. The investigative process required synthesizing complex ecological research on invasive species migration alongside sensitive cultural testimonies. My work focused on connecting these two threads into a coherent, accurate piece for a national audience. We pitched the story to The Narwhal, where it was accepted and co-authored as a published feature. Every stage of writing required careful editorial judgment to ensure the final piece was scientifically rigorous, culturally respectful, and accessible to general readers.</p>
+
+                                <h4>Key Learnings</h4>
+                                <p>This project reinforced that impactful storytelling is an exercise in rigorous research and ethical translation. It taught me how to navigate unfamiliar subject matter quickly, manage qualitative interviews alongside technical data, and build trust with stakeholders across sensitive topics. Beyond basic reporting skills, it deepened my ability to frame complex real-world issues in a way that is clear, compelling, and grounded in fact.</p>
+
+                                <a href="https://thenarwhal.ca" target="_blank" class="custom-link">Read our article here</a>
+                            </div>
+                        </div>
+                        <button class="toggle-btn" onclick="toggleText(this)">Show more</button>
+
+                        <div class="skill-tags">
+                            <span class="tag skill-research">Investigative Reporting</span>
+                            <span class="tag skill-research">Qualitative Interviews</span>
+                            <span class="tag skill-research">Editorial Planning</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Category 4: Data Storytelling -->
+            <div class="category-block">
+                <h2 class="category-title">Data Storytelling</h2>
+                <div class="project-grid single-col">
+                    
+                    <div class="project-card">
+                        <h3><a href="https://theodunn12.wixsite.com/itec2100-th" target="_blank" class="project-link">Economic & Environmental Analysis of Canada’s Forestry Industry</a></h3>
+                        
+                        <div class="desc-container">
+                            <div class="desc-content">
+                                <h4>Project Context & Initial Direction</h4>
+                                <p>For this data storytelling project, my team was tasked with analyzing open-source datasets to identify and communicate a significant real-world story. We initially set out to focus on an environmental issue, landing on unsustainable clear-cutting methods in Canada’s forestry sector. As we began gathering data on harvest rates and forest loss, I recognized a critical narrative limitation: presenting this purely as an environmental issue meant we would mostly preach to an audience that was already convinced.</p>
+
+                                <h4>Strategic Pivot & Audience Framing</h4>
+                                <p>Good data storytelling relies on identifying not just who your audience currently is, but who your audience needs to be. To expand the reach and impact of our findings, I led a pivot in our analytical approach. Instead of framing unsustainable forestry solely as an ecological concern, we shifted to an industrial and macroeconomic lens. We reframed the data to show how unsustainable clear-cutting directly contributes to declining sector employment, resource depletion, and long-term risks to Canada's overall GDP.</p>
+
+                                <h4>Data Synthesis & Impact</h4>
+                                <p>By combining environmental data with economic and labor metrics, we turned an isolated conservation issue into a national economic concern. The final interactive digital report showed that short-term over-harvesting jeopardizes the future stability of the industry itself, directly affecting livelihoods and regional economies. This framing made the data relevant to stakeholders, policymakers, and general readers who might otherwise tune out purely environmental arguments.</p>
+
+                                <h4>Key Learnings</h4>
+                                <p>This project reinforced that raw data is only as effective as the strategy behind its narrative. It taught me how to identify audience biases, cross-reference disparate datasets (environmental vs. economic), and strategically structure information to make complex data actionable and persuasive for a broader audience.</p>
+
+                                <a href="https://theodunn12.wixsite.com/itec2100-th" target="_blank" class="custom-link">Read our Data Story here</a>
+                            </div>
+                        </div>
+                        <button class="toggle-btn" onclick="toggleText(this)">Show more</button>
+
+                        <div class="skill-tags">
+                            <span class="tag skill-data">Data Analysis</span>
+                            <span class="tag skill-data">Audience Strategy</span>
+                            <span class="tag skill-data">Macroeconomic Framing</span>
                         </div>
                     </div>
 
@@ -108,8 +231,17 @@
 
     </div>
 
-    <!-- Script for Expandable Text Toggle -->
+    <!-- Pop-up Modal for PDFs and Media -->
+    <div id="mediaModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="modalIframe" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script>
+        // Toggle text expansion
         function toggleText(btn) {
             const container = btn.previousElementSibling;
             container.classList.toggle('expanded');
@@ -117,6 +249,26 @@
                 btn.textContent = "Show less";
             } else {
                 btn.textContent = "Show more";
+            }
+        }
+
+        // Modal pop-up logic
+        function openModal(fileUrl) {
+            event.preventDefault(); // Prevents page from jumping to top
+            document.getElementById('modalIframe').src = fileUrl;
+            document.getElementById('mediaModal').style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById('mediaModal').style.display = "none";
+            document.getElementById('modalIframe').src = "";
+        }
+
+        // Close modal if user clicks outside the box
+        window.onclick = function(event) {
+            const modal = document.getElementById('mediaModal');
+            if (event.target == modal) {
+                closeModal();
             }
         }
     </script>
