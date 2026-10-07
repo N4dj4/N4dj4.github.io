@@ -13,33 +13,39 @@
 
     <div class="portfolio-container">
         
-        <!-- Navigation Header (Cleaned up as requested) -->
+        <!-- Navigation Header -->
         <header class="site-header">
-            <span class="logo-code">&lt;n4dj4 /&gt;</span>
+            <span class="logo-code">&lt;<span class="logo-pink">n</span><span class="logo-green">4</span><span class="logo-pink">dj</span><span class="logo-green">4</span> /&gt;</span>
         </header>
 
         <!-- Introduction Section -->
         <section class="intro-section">
-            <h1 class="hello-heading">Hello, I'm Nadja!</h1>
+            <h1 class="hello-heading">Hello, I'm <span class="name-pink">Nadja</span>!</h1>
             
-            <div class="intro-text">
-                <p>My approach to digital media is rooted in a simple reality: a beautifully written narrative is useless if the user cannot navigate it, and a highly functional website fails if the content does not resonate. Studying Media Production and Design at Carleton University placed me exactly at the intersection of IT and journalism, teaching me to treat storytelling not as an abstract concept, but as a structural problem to solve.</p>
-                <p>To me, creating meaningful content is about translation and constant perspective-shifting. It requires diving into the research, running the tests, and understanding exactly who needs to receive the information. When I co-authored a feature for The Narwhal, I spent months interviewing community knowledge keepers in Akwesasne to gather their insights and translate their nuanced environmental experiences into accurate journalism. When I transitioned into government and corporate roles to redesign digital spaces and workflows, the challenge shifted to technical translation. In every project, I map the user journey to find the exact middle ground between the client's business goals, the user's practical expectations, and the reality of what is technically possible to build.</p>
-                <p>I rely heavily on user research, analytics, and accessibility principles because crafting a compelling platform is only the first step. The second is ensuring it actually reaches its intended audience. By combining data insights with a strong foundation in UI/UX design, I aim to create digital experiences that are intuitive and engaging. I enjoy the entire lifecycle of a project, from the initial editorial planning and user testing to the final technical implementation.</p>
-                <p>Digital media and web standards are constantly shifting, which is exactly what keeps this work engaging. Driven by curiosity, I am always exploring new tools, experimenting with platforms, and sharpening my technical toolkit to build web spaces that are clean, practical, and accessible.</p>
+            <!-- Collapsible About Me Section using your card collapse structure -->
+            <div class="desc-container">
+                <div class="desc-content intro-text">
+                    <p>My approach to digital media is rooted in a simple reality: a beautifully written narrative is useless if the user cannot navigate it, and a highly functional website fails if the content does not resonate. Studying Media Production and Design at Carleton University placed me exactly at the intersection of IT and journalism, teaching me to treat storytelling not as an abstract concept, but as a structural problem to solve.</p>
+                    <p>To me, creating meaningful content is about translation and constant perspective-shifting. It requires diving into the research, running the tests, and understanding exactly who needs to receive the information. When I co-authored a feature for The Narwhal, I spent months interviewing community knowledge keepers in Akwesasne to gather their insights and translate their nuanced environmental experiences into accurate journalism. When I transitioned into government and corporate roles to redesign digital spaces and workflows, the challenge shifted to technical translation. In every project, I map the user journey to find the exact middle ground between the client's business goals, the user's practical expectations, and the reality of what is technically possible to build.</p>
+                    <p>I rely heavily on user research, analytics, and accessibility principles because crafting a compelling platform is only the first step. The second is ensuring it actually reaches its intended audience. By combining data insights with a strong foundation in UI/UX design, I aim to create digital experiences that are intuitive and engaging. I enjoy the entire lifecycle of a project, from the initial editorial planning and user testing to the final technical implementation.</p>
+                    <p>Digital media and web standards are constantly shifting, which is exactly what keeps this work engaging. Driven by curiosity, I am always exploring new tools, experimenting with platforms, and sharpening my technical toolkit to build web spaces that are clean, practical, and accessible.</p>
+                </div>
             </div>
-
-            <a href="resume.pdf" download class="btn-download">Download my resume</a>
+            <button class="toggle-btn" onclick="toggleText(this)">Show more</button>
+            
+            <div style="margin-top: 25px;">
+                <a href="resume.pdf" download class="btn-download">Download my resume</a>
+            </div>
         </section>
 
         <!-- Projects Section -->
         <section class="projects-section">
             
-            <h2 class="section-subtitle">Learn about my recent projects/experiences below</h2>
+            <h2 class="projects-heading">Explore My Recent Projects & Professional Experience</h2>
 
             <!-- Category 1: Web & Digital -->
             <div class="category-block">
-                <h2 class="category-title">Web & Digital Optimization</h2>
+                <h2 class="category-title category-web-title">Web & Digital Optimization</h2>
                 <div class="project-grid single-col">
                     
                     <div class="project-card">
@@ -74,8 +80,9 @@
 
             <!-- Category 2: Media Production & Design -->
             <div class="category-block">
-                <h2 class="category-title">Media Production & Design</h2>
-                <div class="project-grid">
+                <h2 class="category-title category-media-title">Media Production & Design</h2>
+                <!-- Changed to single-col to stack Watching Territory and NAC vertically -->
+                <div class="project-grid single-col">
                     
                     <!-- Watching Territory -->
                     <div class="project-card">
@@ -130,9 +137,9 @@
                                 <p>This project expanded my ability to adapt a single core concept across completely different mediums. It required combining visual storytelling, colour theory, and audience-focused design with practical execution across the Adobe Creative Suite.</p>
 
                                 <div class="link-group">
-                                    <a href="#" onclick="openModal('assets/Wireframes.pdf')" class="custom-link">View Wireframing Process</a>
-                                    <a href="#" onclick="openModal('assets/ActivityBook.pdf')" class="custom-link">View Activity Book Final Product</a>
-                                    <a href="#" onclick="openModal('assets/Walkthrough.mp4')" class="custom-link">View Mobile App Video Walkthrough</a>
+                                    <a href="#" onclick="openModal('MPAD2001_Activity_Annotated_Wireframe.pdf')" class="custom-link">View Wireframing Process</a>
+                                    <a href="#" onclick="openModal('MPAD2001_ActivityBook.pdf')" class="custom-link">View Activity Book Final Product</a>
+                                    <a href="#" onclick="openModal('MPAD2001_SecretLake_NadjaRadakovic.mp4')" class="custom-link">View Mobile App Video Walkthrough</a>
                                 </div>
                             </div>
                         </div>
@@ -151,11 +158,11 @@
 
             <!-- Category 3: Journalism -->
             <div class="category-block">
-                <h2 class="category-title">Journalism</h2>
+                <h2 class="category-title category-journalism-title">Journalism</h2>
                 <div class="project-grid single-col">
                     
                     <div class="project-card">
-                        <h3><a href="https://thenarwhal.ca" target="_blank" class="project-link">The Narwhal | Investigative Reporting & Environmental Feature</a></h3>
+                        <h3><a href="https://thenarwhal.ca/mohawk-basketweaving-emerald-ash-borer/" target="_blank" class="project-link">The Narwhal | Investigative Reporting & Environmental Feature</a></h3>
                         
                         <div class="desc-container">
                             <div class="desc-content">
@@ -171,7 +178,7 @@
                                 <h4>Key Learnings</h4>
                                 <p>This project reinforced that impactful storytelling is an exercise in rigorous research and ethical translation. It taught me how to navigate unfamiliar subject matter quickly, manage qualitative interviews alongside technical data, and build trust with stakeholders across sensitive topics. Beyond basic reporting skills, it deepened my ability to frame complex real-world issues in a way that is clear, compelling, and grounded in fact.</p>
 
-                                <a href="https://thenarwhal.ca" target="_blank" class="custom-link">Read our article here</a>
+                                <a href="https://thenarwhal.ca/mohawk-basketweaving-emerald-ash-borer/" target="_blank" class="custom-link">Read our article here</a>
                             </div>
                         </div>
                         <button class="toggle-btn" onclick="toggleText(this)">Show more</button>
@@ -188,7 +195,7 @@
 
             <!-- Category 4: Data Storytelling -->
             <div class="category-block">
-                <h2 class="category-title">Data Storytelling</h2>
+                <h2 class="category-title category-data-title">Data Storytelling</h2>
                 <div class="project-grid single-col">
                     
                     <div class="project-card">
@@ -226,7 +233,7 @@
         </section>
 
         <footer class="site-footer">
-            <p>&copy; 2026 Nadja Radakovic. Built with code & creativity.</p>
+            <p>&copy; 2026 Nadja Radakovic</p>
         </footer>
 
     </div>

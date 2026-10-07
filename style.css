@@ -123,6 +123,15 @@ body {
     color: #65613F; 
 }
 
+/* Logo custom colours */
+.logo-pink {
+    color: #65613F;
+}
+.logo-green {
+    color: #65613F;
+    font-weight: 700;
+}
+
 /* Intro Block */
 .intro-section {
     margin-bottom: 70px;
@@ -133,6 +142,11 @@ body {
     letter-spacing: -1px;
     margin-bottom: 20px;
     color: #3E4233;
+}
+
+/* Hello, I'm "Nadja" title */
+.name-pink {
+    color: #d87a79;
 }
 
 .intro-text p {
@@ -161,7 +175,16 @@ body {
     box-shadow: 0 6px 20px rgba(157, 161, 89, 0.35);
 }
 
-/* Project Categories */
+/* Project Heading: Explore My Recent Projects & Professional Experience */
+.projects-heading {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #7C826F;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .section-subtitle {
     font-size: 1.1rem;
     font-weight: 500;
@@ -178,11 +201,16 @@ body {
 .category-title {
     font-size: 1.35rem;
     margin-bottom: 20px;
-    color: #3E4233;
     font-weight: 600;
     border-bottom: 2px solid #E6E8DF;
     padding-bottom: 8px;
 }
+
+/* Colour-coded category titles */
+.category-data-title { color: #9f89aa; }        /* Purple for Data Storytelling */
+.category-journalism-title { color: #879ca9; }  /* Blue for Journalism */
+.category-media-title { color: #bd8fa2; }       /* Pink for Media */
+.category-web-title { color: #909a75; }         /* Green for Web */
 
 .project-grid {
     display: grid;
@@ -292,11 +320,13 @@ body {
     margin-bottom: 15px;
 }
 
+/* Subheadings inside project bubbles */
 .desc-content h4 {
-    font-size: 1rem;
-    color: #3E4233;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    font-size: 1.05rem;
+    color: #3e4233; 
+    font-weight: 600;
+    margin-top: 22px;
+    margin-bottom: 6px;
 }
 
 .desc-content h4:first-child {
